@@ -205,4 +205,9 @@ footer div {
     letter-spacing: 2px;
     font-weight: bold;
   }
+
+  .clue {
+    width: 205px;
+    height: 120px;
+  }
 }
