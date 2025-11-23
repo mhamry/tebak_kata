@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tebak Kata Inggris — FULL</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>GUESS THE WORD</h1>
+
+      <div class="top-controls">
+        <div>
+          <label for="difficulty">Difficulty:</label>
+          <select id="difficulty">
+            <option value="easy">Easy (30s)</option>
+            <option value="normal" selected>Normal (20s)</option>
+            <option value="hard">Hard (10s)</option>
+          </select>
+          <button id="btnStart">START</button>
+        </div>
+
+        <div class="music-toggle">
+          <label>
+            <input type="checkbox" id="musicToggle" />
+            Background Music
+          </label>
+        </div>
+      </div>
+
+      <div class="status">
+        <div id="level">Level: 0 / 0</div>
+        <div id="score">Score: 0</div>
+        <div id="highscore">Last Score: 0</div>
+      </div>
+
+      <section class="game-card">
+        <div id="clue" class="clue">Guess The WORD!!</div>
+
+        <div id="timerWrap" class="timer-wrap">
+          <div id="timerText">Time: 0s</div>
+          <div id="timerBar" class="timer-bar"><div id="timerFill" class="timer-fill"></div></div>
+        </div>
+
+        <div class="input-row">
+          <input type="text" id="answer" placeholder="Ketik jawaban atau 'pass'..." autocomplete="off" autofocus />
+          <button id="btnAnswer">Jawab</button>
+          <button id="btnVoice">🎤 Voice</button>
+        </div>
+
+        <div class="notes">
+          <small>Ucap atau ketik <strong>pass</strong> untuk melewati ke clue berikutnya (timer tidak reset).</small>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div>Copyright©️2025 by Muhammad hamri</div>
+      </footer>
+    </main>
+
+    <!-- Audio assets (external free sound sources) -->
+    <audio id="tick" src="https://www.soundjay.com/button/sounds/beep-07.mp3" preload="auto"></audio>
+    <audio id="soundCorrect" src="https://www.soundjay.com/buttons/sounds/button-3.mp3" preload="auto"></audio>
+    <audio id="soundWrong" src="https://www.soundjay.com/buttons/sounds/button-10.mp3" preload="auto"></audio>
+    <!-- Background music (loop) -->
+    <audio id="bgMusic" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" preload="auto" loop></audio>
+
+    <script src="game.js"></script>
+  </body>
+</html>
