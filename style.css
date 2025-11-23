@@ -154,10 +154,13 @@ h1 {
   font-size: 13px;
 }
 
-footer {
+footer div {
   text-align: center;
-  color: fuchsia;
+  color: greenyellow;
   margin: 10px;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
 /* shake effect when wrong */
