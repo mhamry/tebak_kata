@@ -196,4 +196,13 @@ footer div {
   .input-row button {
     width: 100%;
   }
+
+  footer div {
+    text-align: center;
+    color: greenyellow;
+    margin: 10px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
 }
